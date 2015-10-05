@@ -1,0 +1,64 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+  padding-top: 20px;
+  //background-color: #312312;
+
+}
+
+.navbar{
+  background-color: #312312;
+}
+
+
+
+.nav-item{
+  margin-left: -90px;
+  float: left;
+  margin-top: 10px;
+  //margin-right: 40px;
+  //position: relative;
+  //margin: 0 0 3px 0;
+  //width: 10px;
+  height: 50px;
+
+}
+.right{
+  text-align: right;
+  margin-top: 10px;
+  margin-right: -90px;
+
+
+}
+.center-container{
+  text-align: center;
+  //color: #B00100;
+}
+
+.welcome-text{
+  text-align: center;
+}
+
+.p-left{
+  text-align: left;
+}
+
+.footer{
+  margin-top: 170px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+
+}
+
+.jumbotron{
+  //margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.row{
+  //background-image: url("blog3.jpg");
+  //padding-bottom: 100px;
+  //padding-right: 20px;
+}
+
