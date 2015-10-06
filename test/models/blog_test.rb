@@ -2,11 +2,19 @@ require 'test_helper'
 
 class BlogTest < ActiveSupport::TestCase
   def setup
-    @blog = Blog.new(blogname: 'first blog entry', description: 'this is the first blog entry for testing purpose only')
+    @user = User.create(username: 'vishal', email: 'vishal@example.com')
+    @blog = Blog.new(blogname: 'first blog entry',
+            description: 'this is the first blog entry for testing purpose only',
+             user_id: '1')
   end
 
   test 'blog should be valid'do
     assert @blog.valid?
+  end
+
+  test 'user_id should be present' do
+    @blog.user_id = nil
+    assert_not @blog.valid?
   end
 
   test 'blogname should not be empty' do

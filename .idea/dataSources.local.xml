@@ -2,5 +2,6 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails Test_Site_1: development" uuid="c4bab57e-b393-45c2-8a61-052896bb77b2" />
+    <data-source name="Rails Test_Site_1: test" uuid="5a630c6e-045e-47b9-8c4a-23bb15b659b7" />
   </component>
 </project>

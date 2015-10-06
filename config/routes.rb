@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # get 'home/home'
   # get 'pages_controller/home'
 
+  resources :blogs
+
 end

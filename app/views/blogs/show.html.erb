@@ -1,0 +1,21 @@
+<p>
+<h1><%= @blog.blogname %></h1>
+
+</p>
+
+<div class="row">
+  <div class="col-md-4 pull-right center">
+    <%= gravatar_for @blog.user, size:200 %>
+    <p>
+    <h5>Blog Created by: <%= @blog.user.username %></h5>
+    </p>
+  </div>
+  <div class="col-md-8 center">
+    <h3>Content:</h3>
+    <div class="well">
+     <%= @blog.description %>
+    </div>
+  </div>
+</div>
+
+<h5><%= link_to 'Return to Blog Listing', blogs_path, class: 'btn btn-warning btn-lg center' %></h5>
