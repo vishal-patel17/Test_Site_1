@@ -1,7 +1,4 @@
-<p>
-<h1><%= @blog.blogname %></h1>
-
-</p>
+<%= render 'shared/page_title', title: @blog.blogname %>
 
 <div class="row">
   <div class="col-md-4 pull-right center">
@@ -10,10 +7,12 @@
     <h5>Blog Created by: <%= @blog.user.username %></h5>
     </p>
   </div>
-  <div class="col-md-8 center">
+  <div class="col-md-8">
+    <%= link_to 'Edit Blog', edit_blog_path(@blog),class: 'btn btn-success pull-right' %>
+
     <h3>Content:</h3>
     <div class="well">
-     <%= @blog.description %>
+     <%= simple_format(@blog.description) %>
     </div>
   </div>
 </div>

@@ -1,9 +1,12 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="nav-item">
-      <p><%= link_to "Home","",class: "btn btn-lg btn-success btn-default"  %></p>
+      <p><%= link_to "Home",root_path,class: "btn btn-lg btn-success btn-default"  %></p>
+
     </div>
     <div class="right">
+      <%= link_to "New Blog",new_blog_path,class: "btn btn-lg btn-success btn-default"  %>
+
       <%= link_to "Sign Up","",class: "btn btn-danger  btn-lg btn-success"  %>
 
       <%= link_to "Login","",class: "btn btn-danger btn-lg btn-success"  %>
