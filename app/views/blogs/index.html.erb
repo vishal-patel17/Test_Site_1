@@ -1,6 +1,5 @@
 <%= render 'shared/page_title', title: 'All Blogs' %>
 
-<hr/>
 <div class="row">
   <div class="col-md-11">
     <section class="search-match">
@@ -8,7 +7,8 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <%= link_to 'Submit', '',class: 'btn btn-info pull-right' %>
+        <!--<button type="submit" class="btn btn-default pull-right">Submit</button>-->
       </form>
     </section>
   </div>
@@ -21,7 +21,7 @@
 <% @blogs.each do |blog| %>
 
 
-    <div class="row">
+    <div class="row main_page">
 
       <div class="col-md-2">
         <section class="user_info center">
@@ -57,19 +57,19 @@
 <% end %>
 
 
-<!--<hr/>-->
-<!--<div class="row">-->
-  <!--<div class="col-md-11">-->
-    <!--<section class="search-match">-->
+<hr/>
+<div class="row">
+  <div class="col-md-11">
+    <section class="search-match">
 
-      <!--<nav class="navbar-right">-->
-        <!--<ul class="pager">-->
-          <!--<li><a href="#">Previous</a></li>-->
-          <!--<li><a href="#">Next</a></li>-->
-        <!--</ul>-->
-      <!--</nav>-->
+      <nav class="navbar-right">
+        <ul class="pager">
+          <li><a href="#">Previous</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </nav>
 
-    <!--</section>-->
-  <!--</div>-->
-<!--</div>-->
+    </section>
+  </div>
+</div>
 

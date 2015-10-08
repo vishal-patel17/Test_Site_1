@@ -93,15 +93,6 @@ h2{
 }
 
 
-.jumbotron{
-  //margin-bottom: 50px;
-  padding-bottom: 40px;
-}
-.row{
-  //background-image: url("blog3.jpg");
-  //padding-bottom: 100px;
-  //padding-right: 20px;
-}
 
 .user_info{
   margin-top: 10px;
@@ -138,7 +129,15 @@ span.picture{
 
 .show_blog{
   margin: 10px 10px 10px 10px;
+  margin-left: 50px;
 }
 .return_blog{
   margin-left: 50px;
+}
+.main_page{
+  background-color: transparent;
+
+}
+.form_position{
+  padding-left: 250px;
 }

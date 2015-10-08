@@ -1,6 +1,6 @@
 <%= render 'shared/page_title', title: @blog.blogname %>
 
-<div class="row">
+<div class="row center-block">
   <div class="col-md-4 pull-right center">
     <%= gravatar_for @blog.user, size:200 %>
     <p>
@@ -14,7 +14,7 @@
       <%= image_tag(@blog.picture.url, class: "gravatar") if @blog.picture? %>
     </div>
 
-    <h3>Content:</h3>
+    <h3 class="center">Content:</h3>
     <div class="well">
      <%= simple_format(@blog.description) %>
     </div>

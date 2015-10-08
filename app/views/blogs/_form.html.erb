@@ -1,7 +1,7 @@
 <%= render 'shared/errors',obj: @blog %>
 
 
-<div class="row">
+<div class="row form_position">
   <div class="well col-md-8 col-md-offset-2">
 
     <%= form_for @blog do |f| %>
@@ -16,7 +16,7 @@
           <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
         </span>
 
-        <%= f.submit(@blog.new_record? ? 'Create Blog' : 'Edit Blog',
+        <%= f.submit(@blog.new_record? ? 'Create Blog' : 'Update Blog',
                      class:'btn btn-success' )%>
     <% end %>
 
