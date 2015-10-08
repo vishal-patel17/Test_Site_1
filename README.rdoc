@@ -1,7 +1,9 @@
 == README
 
 Under Construction:
+
 A web application for blogging
+
 Made using Ruby on Rails
 
 
