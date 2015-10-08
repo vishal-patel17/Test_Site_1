@@ -40,7 +40,7 @@ class BlogTest < ActiveSupport::TestCase
   end
 
   test 'blog description should not be too long' do
-    @blog.description = 'a' * 501
+    @blog.description = 'a' * 5001
     assert_not @blog.valid?
   end
 
